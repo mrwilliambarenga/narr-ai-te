@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { functions } from "../firebase";
+import { httpsCallable } from "firebase/functions";
 
 import { useImages } from "../contexts/ImageContext";
 import { useNavigate, useLocation } from "react-router-dom";
@@ -22,14 +23,14 @@ import dali_img from "../assets/dali.webp";
 // Each item is of the form {theme: [prompt, displayImage]}
 const themes = {
   sketch: ["a simple sketch", sketch_img],
+  dali: ["a Dali painting", dali_img],
+  vanGogh: ["a Van Gogh painting", vanGogh_img],
+  daVinci: ["a Da Vinci painting", daVinci_img],
+  manga: ["a manga panel", manga_img],
+  anime: ["a colourful, mordern anime scene", anime_img],
   comic: ["a coloured comic panel", comic_img],
   cartoon: ["a colourful, modern cartoon scene", cartoon_img],
   disney: ["a Disney movie scene", disney_img],
-  manga: ["a manga panel", manga_img],
-  anime: ["a colourful, mordern anime scene", anime_img],
-  daVinci: ["a Da Vinci painting", daVinci_img],
-  vanGogh: ["a Van Gogh painting", vanGogh_img],
-  dali: ["a Dali painting", dali_img],
 };
 
 const GenerateImage = () => {
@@ -45,7 +46,7 @@ const GenerateImage = () => {
 
   const generateImage = async () => {
     setIsLoading(true);
-    const generateImageFunction = functions.httpsCallable("generateImage");
+    const generateImageFunction = httpsCallable(functions, "generateImage");
 
     try {
       const { data } = await generateImageFunction({

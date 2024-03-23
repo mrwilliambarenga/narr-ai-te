@@ -7,12 +7,12 @@ const openai = new OpenAI({
 
 exports.generateImage = functions.https.onCall(async (data, context) => {
   // Firebase call authentication
-  if (!context.auth) {
-    throw new functions.https.HttpsError(
-        "unauthenticated",
-        "Request had invalid credentials.",
-    );
-  }
+  // if (!context.auth) {
+  //   throw new functions.https.HttpsError(
+  //       "unauthenticated",
+  //       "Request had invalid credentials.",
+  //   );
+  // }
 
   // OpenAI API call
   try {
