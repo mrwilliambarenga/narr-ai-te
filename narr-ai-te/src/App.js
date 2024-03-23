@@ -15,11 +15,11 @@ function App() {
       <ImageProvider>
         <CanvasProvider>
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/view-comic" element={<ViewComic />} />
-            <Route path="/whiteboard" element={<Whiteboard />} />
-            <Route path="/whiteboard/:id" element={<Whiteboard />} />
-            <Route path="/generation" element={<GenerateImage />} />
+            <Route path="/narr-ai-te" element={<Home />} />
+            <Route path="/narr-ai-te/view-comic" element={<ViewComic />} />
+            <Route path="/narr-ai-te/whiteboard" element={<Whiteboard />} />
+            <Route path="/narr-ai-te/whiteboard/:id" element={<Whiteboard />} />
+            <Route path="/narr-ai-te/generation" element={<GenerateImage />} />
           </Routes>
         </CanvasProvider>
       </ImageProvider>
