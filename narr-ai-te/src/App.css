@@ -1,0 +1,12 @@
+.App {
+  text-align: center;
+}
+
+/* Prevent scrolling on touch-screen devices */
+canvas, body, html {
+  touch-action: none;
+}
+
+#canvas, #canvasContainer {
+  touch-action: none;
+}
