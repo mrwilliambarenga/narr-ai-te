@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/narr-ai-te/static/css/main.95335798.css",
-    "main.js": "/narr-ai-te/static/js/main.e3b643fc.js",
+    "main.js": "/narr-ai-te/static/js/main.0816ee7b.js",
     "static/js/453.4a1a57bf.chunk.js": "/narr-ai-te/static/js/453.4a1a57bf.chunk.js",
     "static/media/vanGogh.webp": "/narr-ai-te/static/media/vanGogh.023ea356466b7eb36786.webp",
     "static/media/comic.webp": "/narr-ai-te/static/media/comic.7b9b267e8c060c5c634c.webp",
@@ -14,11 +14,11 @@
     "static/media/sketch.webp": "/narr-ai-te/static/media/sketch.d7255ed6d466c680bda5.webp",
     "index.html": "/narr-ai-te/index.html",
     "main.95335798.css.map": "/narr-ai-te/static/css/main.95335798.css.map",
-    "main.e3b643fc.js.map": "/narr-ai-te/static/js/main.e3b643fc.js.map",
+    "main.0816ee7b.js.map": "/narr-ai-te/static/js/main.0816ee7b.js.map",
     "453.4a1a57bf.chunk.js.map": "/narr-ai-te/static/js/453.4a1a57bf.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.95335798.css",
-    "static/js/main.e3b643fc.js"
+    "static/js/main.0816ee7b.js"
   ]
 }
