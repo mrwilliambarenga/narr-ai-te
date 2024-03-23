@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/narr-ai-te/static/css/main.95335798.css",
-    "main.js": "/narr-ai-te/static/js/main.0816ee7b.js",
-    "static/js/453.4a1a57bf.chunk.js": "/narr-ai-te/static/js/453.4a1a57bf.chunk.js",
-    "static/media/vanGogh.webp": "/narr-ai-te/static/media/vanGogh.023ea356466b7eb36786.webp",
-    "static/media/comic.webp": "/narr-ai-te/static/media/comic.7b9b267e8c060c5c634c.webp",
-    "static/media/anime.webp": "/narr-ai-te/static/media/anime.da4e3a98f0a662981676.webp",
-    "static/media/disney.webp": "/narr-ai-te/static/media/disney.3245137104a44321b6bb.webp",
-    "static/media/cartoon.webp": "/narr-ai-te/static/media/cartoon.5f2775c0d6795eb09583.webp",
-    "static/media/manga.webp": "/narr-ai-te/static/media/manga.057e138139070b546dc2.webp",
-    "static/media/dali.webp": "/narr-ai-te/static/media/dali.e16b2ef51775b2667af1.webp",
-    "static/media/daVinci.webp": "/narr-ai-te/static/media/daVinci.6617845a85d06fce98dc.webp",
-    "static/media/sketch.webp": "/narr-ai-te/static/media/sketch.d7255ed6d466c680bda5.webp",
-    "index.html": "/narr-ai-te/index.html",
-    "main.95335798.css.map": "/narr-ai-te/static/css/main.95335798.css.map",
-    "main.0816ee7b.js.map": "/narr-ai-te/static/js/main.0816ee7b.js.map",
-    "453.4a1a57bf.chunk.js.map": "/narr-ai-te/static/js/453.4a1a57bf.chunk.js.map"
+    "main.css": "/individual-project/static/css/main.95335798.css",
+    "main.js": "/individual-project/static/js/main.a62852a4.js",
+    "static/js/453.4a1a57bf.chunk.js": "/individual-project/static/js/453.4a1a57bf.chunk.js",
+    "static/media/vanGogh.webp": "/individual-project/static/media/vanGogh.023ea356466b7eb36786.webp",
+    "static/media/comic.webp": "/individual-project/static/media/comic.7b9b267e8c060c5c634c.webp",
+    "static/media/anime.webp": "/individual-project/static/media/anime.da4e3a98f0a662981676.webp",
+    "static/media/disney.webp": "/individual-project/static/media/disney.3245137104a44321b6bb.webp",
+    "static/media/cartoon.webp": "/individual-project/static/media/cartoon.5f2775c0d6795eb09583.webp",
+    "static/media/manga.webp": "/individual-project/static/media/manga.057e138139070b546dc2.webp",
+    "static/media/dali.webp": "/individual-project/static/media/dali.e16b2ef51775b2667af1.webp",
+    "static/media/daVinci.webp": "/individual-project/static/media/daVinci.6617845a85d06fce98dc.webp",
+    "static/media/sketch.webp": "/individual-project/static/media/sketch.d7255ed6d466c680bda5.webp",
+    "index.html": "/individual-project/index.html",
+    "main.95335798.css.map": "/individual-project/static/css/main.95335798.css.map",
+    "main.a62852a4.js.map": "/individual-project/static/js/main.a62852a4.js.map",
+    "453.4a1a57bf.chunk.js.map": "/individual-project/static/js/453.4a1a57bf.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.95335798.css",
-    "static/js/main.0816ee7b.js"
+    "static/js/main.a62852a4.js"
   ]
 }
