@@ -1,5 +1,5 @@
 import React from "react";
-import { HashRouter as Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import { ImageProvider } from "./contexts/ImageContext";
 import { CanvasProvider } from "./contexts/CanvasContext";
 import "./App.css";
