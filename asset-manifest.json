@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/individual-project/static/css/main.95335798.css",
-    "main.js": "/individual-project/static/js/main.a62852a4.js",
+    "main.js": "/individual-project/static/js/main.37391fb4.js",
     "static/js/453.4a1a57bf.chunk.js": "/individual-project/static/js/453.4a1a57bf.chunk.js",
     "static/media/vanGogh.webp": "/individual-project/static/media/vanGogh.023ea356466b7eb36786.webp",
     "static/media/comic.webp": "/individual-project/static/media/comic.7b9b267e8c060c5c634c.webp",
@@ -14,11 +14,11 @@
     "static/media/sketch.webp": "/individual-project/static/media/sketch.d7255ed6d466c680bda5.webp",
     "index.html": "/individual-project/index.html",
     "main.95335798.css.map": "/individual-project/static/css/main.95335798.css.map",
-    "main.a62852a4.js.map": "/individual-project/static/js/main.a62852a4.js.map",
+    "main.37391fb4.js.map": "/individual-project/static/js/main.37391fb4.js.map",
     "453.4a1a57bf.chunk.js.map": "/individual-project/static/js/453.4a1a57bf.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.95335798.css",
-    "static/js/main.a62852a4.js"
+    "static/js/main.37391fb4.js"
   ]
 }
