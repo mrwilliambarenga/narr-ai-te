@@ -62,12 +62,11 @@ const GenerateImage = () => {
   };
 
   const handleReturn = () => {
-    navigate(-1);
+    navigate("/whiteboard");
   };
 
   const handleConfirm = () => {
     setImages((prevImages) => [...prevImages, image]);
-    alert("Image confirmed");
     navigate("/view-comic");
   };
 
