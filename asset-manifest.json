@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/individual-project/static/css/main.ad248390.css",
-    "main.js": "/individual-project/static/js/main.2903f827.js",
+    "main.css": "/individual-project/static/css/main.e282a5c9.css",
+    "main.js": "/individual-project/static/js/main.66af8880.js",
     "static/js/453.4a1a57bf.chunk.js": "/individual-project/static/js/453.4a1a57bf.chunk.js",
     "static/media/vanGogh.webp": "/individual-project/static/media/vanGogh.023ea356466b7eb36786.webp",
     "static/media/comic.webp": "/individual-project/static/media/comic.7b9b267e8c060c5c634c.webp",
@@ -13,12 +13,12 @@
     "static/media/daVinci.webp": "/individual-project/static/media/daVinci.6617845a85d06fce98dc.webp",
     "static/media/sketch.webp": "/individual-project/static/media/sketch.d7255ed6d466c680bda5.webp",
     "index.html": "/individual-project/index.html",
-    "main.ad248390.css.map": "/individual-project/static/css/main.ad248390.css.map",
-    "main.2903f827.js.map": "/individual-project/static/js/main.2903f827.js.map",
+    "main.e282a5c9.css.map": "/individual-project/static/css/main.e282a5c9.css.map",
+    "main.66af8880.js.map": "/individual-project/static/js/main.66af8880.js.map",
     "453.4a1a57bf.chunk.js.map": "/individual-project/static/js/453.4a1a57bf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ad248390.css",
-    "static/js/main.2903f827.js"
+    "static/css/main.e282a5c9.css",
+    "static/js/main.66af8880.js"
   ]
 }
