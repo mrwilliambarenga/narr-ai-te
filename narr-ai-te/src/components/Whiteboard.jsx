@@ -66,13 +66,6 @@ const Whiteboard = () => {
   const [selectedElement, setSelectedElement] = useState(null); // the element we have selected
 
   const navigate = useNavigate();
-  // const { setImages } = useImages();
-
-  // useEffect(() => {
-  //   return () => {
-  //     setCurrentState(id, elements);
-  //   };
-  // }, [id, elements, setCurrentState]);
 
   useLayoutEffect(() => {
     const canvas = document.getElementById("canvas"); // get the canvas element from the DOM
@@ -312,62 +305,6 @@ const Whiteboard = () => {
     return imageData;
   };
 
-  // const downloadPNG = () => {
-  //   const imageData = exportCanvas();
-
-  //   // Create an 'a' element for triggering download
-  //   const downloadLink = document.createElement("a");
-  //   downloadLink.href = imageData;
-  //   downloadLink.download = "drawing.png";
-
-  //   // Append link to the body, trigger click, and then remove it
-  //   document.body.appendChild(downloadLink);
-  //   downloadLink.click();
-  //   document.body.removeChild(downloadLink);
-  // };
-
-  // const getImageUrl = async () => {
-  //   const imageData = exportCanvas();
-
-  //   const response = await fetch(imageData);
-  //   const blob = await response.blob();
-
-  //   const formData = new FormData();
-  //   formData.append("file", blob, "drawing.png");
-
-  //   try {
-  //     const uploadResponse = await fetch("https://tmpfiles.org/api/v1/upload", {
-  //       method: "POST",
-  //       body: formData,
-  //     });
-
-  //     const uploadResult = await uploadResponse.json();
-  //     const fileUrl = uploadResult.data.url;
-  //     const imageUrl = fileUrl.replace(
-  //       "https://tmpfiles.org/",
-  //       "https://tmpfiles.org/dl/"
-  //     );
-
-  //     return imageUrl;
-  //   } catch (error) {
-  //     console.log("Error uploading image:", error);
-  //     return null;
-  //   }
-  // };
-
-  // const generatePrompt = async () => {
-  //   const imageUrl = exportCanvas();
-  //   if (imageUrl) {
-  //     const prompt = [imageUrl, selectedTheme];
-  //     // console.log('Prompt: "' + imageUrl + " in the style of " + selectedTheme + '"');
-  //     console.log(prompt)
-  //     return prompt;
-  //   } else {
-  //     console.log("Failed to generate image URL.");
-  //     return null;
-  //   }
-  // };
-
   const generateImage = () => {
     setCurrentState(id, elements);  // Save the current state before generating the image
     const imageUrl = exportCanvas();
@@ -379,9 +316,9 @@ const Whiteboard = () => {
   };
 
   /**
-   * Saves the elements array.
+   * Saves the elements array and goes back to comic view.
    */
-  const saveDrawing = () => {
+  const exitWhiteboard = () => {
     setCurrentState(id, elements);
     navigate("/view-comic");
   };
@@ -420,7 +357,7 @@ const Whiteboard = () => {
       <div className="absolute top-0 m-5 right-0 flex flex-col">
         <button
           className="mb-2 bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-2 rounded flex items-center justify-center"
-          onClick={saveDrawing}
+          onClick={exitWhiteboard}
         >
           <RxCrossCircled className="mr-2" />
           Exit
