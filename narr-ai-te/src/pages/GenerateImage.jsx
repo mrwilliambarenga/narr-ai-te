@@ -9,6 +9,8 @@ import ClipLoader from "react-spinners/ClipLoader";
 import { LuSparkles } from "react-icons/lu";
 import { CiCircleCheck } from "react-icons/ci";
 import { IoExitOutline } from "react-icons/io5";
+import { IoMdDownload } from "react-icons/io";
+import { RxChevronLeft, RxChevronRight } from "react-icons/rx";
 
 import sketch_img from "../assets/sketch.webp";
 import comic_img from "../assets/comic.webp";
@@ -61,6 +63,31 @@ const GenerateImage = () => {
     }
   };
 
+  const downloadImage = () => {
+    const link = document.createElement("a");
+    link.href = image;
+    link.target = "_blank";
+    link.download = "generated_image.png";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
+  const handlePrevTheme = () => {
+    const themesArray = Object.keys(themes);
+    const index = themesArray.indexOf(selectedTheme);
+    const prevTheme =
+      themesArray[(index - 1 + themesArray.length) % themesArray.length];
+    setTheme(prevTheme);
+  };
+
+  const handleNextTheme = () => {
+    const themesArray = Object.keys(themes);
+    const index = themesArray.indexOf(selectedTheme);
+    const nextTheme = themesArray[(index + 1) % themesArray.length];
+    setTheme(nextTheme);
+  };
+
   const handleReturn = () => {
     navigate("/whiteboard");
   };
@@ -89,22 +116,38 @@ const GenerateImage = () => {
           </div>
           {/* Theme selection */}
           <div className="flex flex-col justify-center p-4 m-4 bg-gray-200 border border-gray-400 rounded-xl">
-            <label htmlFor="">
-              Theme:
-              <select
-                name="theme"
-                id="theme"
-                value={selectedTheme}
-                onChange={(e) => setTheme(e.target.value)}
-                className="ml-1"
+            <div className="flex justify-between">
+              <button
+                className="mx-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 rounded flex items-center justify-center"
+                onClick={handlePrevTheme}
               >
-                {Object.keys(themes).map((theme) => (
-                  <option key={theme} value={theme}>
-                    {theme}
-                  </option>
-                ))}
-              </select>
-            </label>
+                <RxChevronLeft />
+              </button>
+              <div className="bg-gray-200 font-bold py-1 px-2 rounded flex items-center justify-center">
+                <label htmlFor="">
+                  Theme:
+                  <select
+                    name="theme"
+                    id="theme"
+                    value={selectedTheme}
+                    onChange={(e) => setTheme(e.target.value)}
+                    className="ml-1"
+                  >
+                    {Object.keys(themes).map((theme) => (
+                      <option key={theme} value={theme}>
+                        {theme}
+                      </option>
+                    ))}
+                  </select>
+                </label>
+              </div>
+              <button
+                className="mx-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 rounded flex items-center justify-center"
+                onClick={handleNextTheme}
+              >
+                <RxChevronRight />
+              </button>
+            </div>
             <div className="flex justify-center mx-4 my-2 mb-4 max-h-[40vh] max-w-[40vh]">
               <img
                 src={themes[selectedTheme][1]}
@@ -114,7 +157,7 @@ const GenerateImage = () => {
             </div>
           </div>
           {/* Display generated image */}
-          <div className="flex flex-col justify-center p-4 m-4 bg-gray-200 border border-gray-400 rounded-xl">
+          <div className="flex flex-col justify-center p-4 m-4 bg-gray-200 border-4 border-purple-400 rounded-xl">
             <div className="flex justify-center mx-4 my-2 mb-4 max-h-[40vh] max-w-[40vh]">
               {isLoading ? (
                 <div className="object-contain rounded-lg border border-gray-400 bg-white w-[40vh] h-[40vh] flex items-center justify-center">
@@ -128,13 +171,21 @@ const GenerateImage = () => {
                 />
               )}
             </div>
-            <div className="flex justify-center mx-4 my-2">
+            <div className="relative flex items-center justify-center mx-4">
               <button
-                className="mx-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 rounded flex items-center justify-center"
+                className="mx-4 bg-purple-500 hover:bg-purple-700 text-white font-bold py-1 px-2 rounded flex items-center justify-center"
                 onClick={generateImage}
               >
                 <LuSparkles className="mr-2" />
                 Spin
+              </button>
+              <button
+                // href={image}
+                // download="generated_image.png"
+                className="absolute right-0 bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-2 rounded flex items-center justify-center"
+                onClick={downloadImage}
+              >
+                <IoMdDownload />
               </button>
             </div>
           </div>
