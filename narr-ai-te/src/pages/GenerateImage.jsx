@@ -99,7 +99,7 @@ const GenerateImage = () => {
 
   return (
     <div className="w-screen h-screen flex flex-col items-center">
-      <div className="flex justify-center text-3xl font-semibold pt-20 ">
+      <div className="flex justify-center text-3xl font-semibold pt-12">
         Generate an image
       </div>
       <div className="h-full flex flex-col items-center justify-center">
@@ -180,8 +180,6 @@ const GenerateImage = () => {
                 Spin
               </button>
               <button
-                // href={image}
-                // download="generated_image.png"
                 className="absolute right-0 bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-2 rounded flex items-center justify-center"
                 onClick={downloadImage}
               >
@@ -204,7 +202,7 @@ const GenerateImage = () => {
           onClick={handleConfirm}
         >
           <CiCircleCheck className="mr-2" />
-          Confirm
+          Save Image
         </button>
       </div>
     </div>

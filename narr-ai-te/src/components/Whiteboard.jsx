@@ -24,7 +24,7 @@ import { LuSparkles } from "react-icons/lu";
  * "flex items-center my-2 py-1 px-2 cursor-pointer border border-gray-300 rounded"
  */
 const ToolSelector = ({ currentTool, setTool }) => (
-  <div className="absolute m-5">
+  <div className="absolute m-5 z-20">
     {toolList.map((tool) => (
       <label
         className={
@@ -325,11 +325,16 @@ const Whiteboard = () => {
 
   return (
     <div>
+      {/* Title (top centre) */}
+      <div className="absolute z-0 top-0 w-[100%] flex flex-row items-center justify-center">
+        <h1 className="text-3xl font-semibold pt-12">Sketch</h1>
+      </div>
+
       {/* Tool selection controls (top left) */}
       <ToolSelector currentTool={tool} setTool={setTool} />
 
       {/* Undo, Redo and Clear buttons (bottom left) */}
-      <div className="absolute bottom-0 m-5 flex">
+      <div className="absolute z-20 bottom-0 m-5 flex">
         <button
           className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 mr-4 rounded flex items-center justify-center"
           onClick={undo}
@@ -354,7 +359,7 @@ const Whiteboard = () => {
       </div>
 
       {/* Exit button (top right) */}
-      <div className="absolute top-0 m-5 right-0 flex flex-col">
+      <div className="absolute z-20 top-0 m-5 right-0 flex flex-col">
         <button
           className="mb-2 bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-2 rounded flex items-center justify-center"
           onClick={exitWhiteboard}
@@ -365,7 +370,7 @@ const Whiteboard = () => {
       </div>
 
       {/* Image generation (bottom right) */}
-      <div className="absolute bottom-0 right-0 m-5 flex items-center">
+      <div className="absolute z-20 bottom-0 right-0 m-5 flex items-center">
         <button
           className="ml-4 bg-green-500 hover:bg-green-700 text-white font-bold py-1 px-2 rounded flex items-center justify-center"
           onClick={generateImage}
@@ -386,6 +391,7 @@ const Whiteboard = () => {
         onTouchStart={handleTouchStart}
         onTouchMove={handleTouchMove}
         onTouchEnd={handleTouchEnd}
+        className="absolute z-10"
       >
         Canvas
       </canvas>

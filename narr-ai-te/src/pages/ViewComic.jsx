@@ -23,7 +23,7 @@ const ViewComic = () => {
 
   return (
     <div className="w-screen h-screen flex flex-col">
-      <div className="flex justify-center text-3xl font-semibold pt-20 pb-8">
+      <div className="flex justify-center text-3xl font-semibold pt-12 pb-8">
         Your Comic
       </div>
       <ImageList />
