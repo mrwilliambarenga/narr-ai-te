@@ -2,7 +2,7 @@
 
 # Instructions:
 
-1) Navigate to the ``narr-ai-te'' subfolder
+1) Navigate to the "narr-ai-te" subfolder
     e.g: cd ./narr-ai-te
 2) Download necessary packages
     i.e: npm install
