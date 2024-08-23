@@ -2,18 +2,20 @@
 
 # Instructions:
 
-1) Navigate to the "narr-ai-te" subfolder
+1) Clone the repo
 
-   e.g: cd ./narr-ai-te
+2) Navigate to the "narr-ai-te" subfolder
+
+   e.g: `cd ./narr-ai-te`
    
-2) Download necessary packages
+3) Download necessary packages
 
-   i.e: npm install
+   i.e: `npm install`
    
-3) Start the runtime environment
+4) Start the runtime environment
 
-   i.e: npm start
+   i.e: `npm start`
    
-4) Navigate to localhost:3000 in your browser of choice
+5) Navigate to `localhost:3000` in your browser of choice
 
-   The deployed version of the application can be found at https://mrwilliambarenga.github.io/individual-project/
+   The deployed version of the application can be found at https://mrwilliambarenga.github.io/narr-ai-te/
